@@ -24,10 +24,17 @@ body {
   padding-top: 50px;
 }
 
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 .site-title {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 700;
   margin-bottom: 10px;
+  color: #e91e63; /* L'Oréal pink */
 }
 
 /* chat window */
@@ -37,12 +44,12 @@ body {
 
 .chat-window {
   height: 360px;
-  border: 1px solid #000;
+  border: 2px solid #e91e63;
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
+  background: #fff;
   white-space: pre-line;
 }
 
@@ -52,12 +59,24 @@ body {
   line-height: 1.5;
 }
 
-.msg.user {
-  color: #000;
+.bubble {
+  padding: 10px 15px;
+  border-radius: 18px;
+  max-width: 70%;
+  word-wrap: break-word;
 }
 
-.msg.ai {
-  color: #666666;
+.user-bubble {
+  background: #e91e63;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+.ai-bubble {
+  background: #f1f1f1;
+  color: #333;
+  margin-right: auto;
 }
 
 /* input row */
@@ -75,13 +94,13 @@ body {
 }
 
 .chat-form input:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #e91e63;
   outline-offset: 2px;
 }
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
+  background: #e91e63;
   color: #fff;
   border: none;
   padding: 12px;
@@ -99,11 +118,11 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #c2185b;
 }
 
 .chat-form button:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #e91e63;
   outline-offset: 2px;
 }
 
