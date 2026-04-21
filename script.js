@@ -51,10 +51,9 @@ chatForm.addEventListener("submit", async (e) => {
 
   // Send to OpenAI API (temporary - switch to Cloudflare Worker after deployment)
   try {
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    const response = await fetch("https://chat-bot.nmccrory.workers.dev/", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
